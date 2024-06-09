@@ -1,6 +1,6 @@
 name: iso9797
 description: ISO/IEC 9797 Message Authentication Codes (MACs) Calculations for Dart.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/xclud/dart_iso9797
 homepage: https://pwa.ir
 

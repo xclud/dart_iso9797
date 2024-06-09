@@ -13,5 +13,6 @@ part 'src/algorithm5.dart';
 part 'src/algorithm6.dart';
 
 part 'src/padding_mode.dart';
+part 'src/padding1.dart';
 part 'src/padding2.dart';
 part 'src/private.dart';
