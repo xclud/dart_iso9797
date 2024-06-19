@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Fixes a bug in MAC calculation.
+
 ## 0.0.4
 
 - Minor fixes.
