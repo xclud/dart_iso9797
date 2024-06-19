@@ -1,4 +1,3 @@
-import 'package:convert/convert.dart';
 import 'package:iso9797/iso9797.dart';
 import 'package:test/test.dart';
 
@@ -135,8 +134,6 @@ void main() {
 
   test('Algorithm 3', () {
     final mac = algorithm3Mac(key, message);
-
-    final h = hex.encode(mac).toUpperCase();
-    expect(h, '35353542344438');
+    expect(mac, [0x35, 0x35, 0x35, 0x42, 0x34, 0x44, 0x38]);
   });
 }
