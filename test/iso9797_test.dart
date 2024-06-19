@@ -135,7 +135,10 @@ void main() {
   test('Algorithm 3', () {
     final mac = algorithm3Mac(key, message);
 
-    final hex = mac.map((e) => e.toRadixString(16)).join().toUpperCase();
+    final hex = mac
+        .map((e) => e.toRadixString(16).padLeft(2, '0'))
+        .join()
+        .toUpperCase();
     expect(hex, '35353542344438');
   });
 }
