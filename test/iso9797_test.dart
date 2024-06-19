@@ -1,3 +1,4 @@
+import 'package:convert/convert.dart';
 import 'package:iso9797/iso9797.dart';
 import 'package:test/test.dart';
 
@@ -135,10 +136,7 @@ void main() {
   test('Algorithm 3', () {
     final mac = algorithm3Mac(key, message);
 
-    final hex = mac
-        .map((e) => e.toRadixString(16).padLeft(2, '0'))
-        .join()
-        .toUpperCase();
-    expect(hex, '35353542344438');
+    final h = hex.encode(mac).toUpperCase();
+    expect(h, '35353542344438');
   });
 }

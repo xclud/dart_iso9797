@@ -47,11 +47,7 @@ Uint8List algorithm3Mac(List<int> key, List<int> message) {
 
   final mac = algorithm3(key, message, PaddingMode.method1);
 
-  final macU = mac
-      .take(4)
-      .map((e) => e.toRadixString(16).padLeft(2, '0'))
-      .join()
-      .toUpperCase();
+  final macU = mac.take(4).map((e) => e.toRadixString(16)).join().toUpperCase();
 
   final result = macU.codeUnits.take(8);
   return Uint8List.fromList(result.toList());
