@@ -2,3 +2,4 @@
 # Created by `dart pub`
 *.lock
 .dart_tool/
+.vs_code/
