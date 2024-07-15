@@ -3,6 +3,7 @@ library iso9797;
 
 import 'dart:typed_data';
 
+import 'package:convert/convert.dart';
 import 'package:dart_des/dart_des.dart';
 
 part 'src/algorithm1.dart';

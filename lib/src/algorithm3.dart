@@ -31,3 +31,17 @@ Uint8List algorithm3(
 
   return mac;
 }
+
+/// ISO 9797 X9.19 MAC Algorithm.
+///
+/// [key] Must be 16 bytes.
+Uint8List x919(
+  List<int> key,
+  List<int> data,
+) {
+  final mac = algorithm3(key, data, PaddingMode.method1);
+  final macHex = hex.encode(mac).toUpperCase();
+
+  final x919 = macHex.substring(0, 8).codeUnits;
+  return Uint8List.fromList(x919);
+}

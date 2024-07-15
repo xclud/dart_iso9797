@@ -1,6 +1,6 @@
-## 0.0.6
+## 0.0.7
 
-- Fixes a bug in MAC calculation.
+- X9.19 MAC re-implemented.
 
 ## 0.0.4
 
